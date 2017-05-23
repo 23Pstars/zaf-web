@@ -1,0 +1,176 @@
+{
+  "site": {
+    "title": "Ahmad Zafrullah",
+    "sub_title": "Work to learn is better than learn how to work",
+    "intro": "<p>I'm <strong>Ahmad Zafrullah</strong>, or just call me <strong>Zaf</strong>.</p><p>Happy to build website and develop useful apps with various technologies.</p>",
+    "tag": "blogger, programmer, designer, manager, lover",
+    "meta_desc": "Blogger, Developer, Designer, and Freelancer Web Design (sometime) in Mataram Lombok. Email : zaf@elektro08.com",
+    "meta_keywords": "Ahmad Zafrullah, Zaf Tapon, Tapon Bilebante, Blogger, Web Design, Web Developer, Web Based Application, Elektro 2008, Fakultas Teknik UNRAM, Universitas Mataram, LRsoft",
+    "photo": "assets/img/me2.jpg",
+    "copyleft": "2017",
+    "url": "https://zaf.web.id",
+    "repo_url": "https://github.com/23Pstars/zaf-web.git",
+    "blog": {
+      "icon": "assets/img/wp.png",
+      "url": "https://zaf.web.id/blog"
+    },
+    "git": {
+      "icon": "assets/img/gh.png",
+      "url": "http://github.zaf.web.id"
+    },
+    "social": {
+      "twitter_user": "@23Pstars",
+      "google_plus": "https://plus.google.com/+AhmadZafrullah",
+      "github": "https://github.com/23Pstars",
+      "bitbucket": "https://bitbucket.org/23Pstars/profile/teams",
+      "twitter": "https://twitter.com/23Pstars",
+      "facebook": "https://facebook.com/23Pstars"
+    },
+    "works": [
+      {
+        "company": "LRsoft Corp.",
+        "time": "2013 &mdash; Now",
+        "url": "http://lrsoft.co.id",
+        "role": "CTO, Co-Founder, and Project Manager"
+      },
+      {
+        "company": "Indo Travel Online",
+        "time": "2014 &mdash; Now",
+        "url": "http://indotravelonline.com",
+        "role": "Co-Founder and Technical Manager"
+      },
+      {
+        "company": "Lombok Reisen",
+        "time": "2013 &mdash; Now",
+        "url": "http://www.lombokreisen.com",
+        "role": "Technical Engineer"
+      },
+      {
+        "company": "Lombok Web Master",
+        "time": "2013",
+        "url": "http://www.lombokwebmaster.com",
+        "role": "Web Engineer"
+      }
+    ],
+    "educations": [
+      {
+        "time": "2015 &mdash; Now",
+        "instance": "Gadjah Mada University",
+        "url": "https://ugm.ac.id",
+        "class": "Master of Information Technology"
+      },
+      {
+        "time": "2008 &mdash; 2013",
+        "instance": "Mataram University",
+        "url": "https://unram.ac.id",
+        "class": "Electrical Engineering"
+      },
+      {
+        "time": "2005 &mdash; 2008",
+        "instance": "SMKN 2 Kuripan",
+        "url": "http://smkn2kuripan.sch.id",
+        "class": "Communication Electricity"
+      },
+      {
+        "time": "2002 &mdash; 2005",
+        "instance": "MTsN Kediri"
+      },
+      {
+        "time": "1996 &mdash; 2002",
+        "instance": "SDN Tapon"
+      }
+    ],
+    "portfolios": [
+      {
+        "title": "ELPSA Project",
+        "role": "Web Endineer",
+        "instance": "IKIP Mataram",
+        "year": "2016"
+      },
+      {
+        "title": "Geometrin Integrasi Teknologi",
+        "role": "Instructor",
+        "instance": "Mataram",
+        "year": "2015"
+      },
+      {
+        "title": "Pusat Teknologi dan Informasi (PUSTIK)",
+        "role": "SIA Core Developer",
+        "instance": "Universitas Mataram",
+        "year": "2014"
+      },
+      {
+        "title": "SMK Qamarul Huda",
+        "role": "Teacher",
+        "instance": "Bagu, Lombok Tengah",
+        "year": "2014"
+      },
+      {
+        "title": "Komisi Pemilihan Umum (KPU)",
+        "role": "IT Engineer",
+        "instance": "Mataram",
+        "year": "2014"
+      },
+      {
+        "title": "Pekan Ilmiah Mahasiswa Nasional",
+        "role": "Web Developer",
+        "instance": "Universitas Mataram",
+        "year": "2013"
+      },
+      {
+        "title": "Selaparang News",
+        "role": "Technical Manager",
+        "instance": "Mataram",
+        "year": "2013"
+      },
+      {
+        "title": "Universitas Mataram",
+        "role": "Senior Web Developer",
+        "instance": "Mataram",
+        "year": "2012"
+      },
+      {
+        "title": "ReLife Property",
+        "role": "Information System Management",
+        "instance": "Mataram",
+        "year": "2012"
+      },
+      {
+        "title": "Pekan Seni Mahasiswa Nasional",
+        "role": "Web Engineer",
+        "instance": "Mataram",
+        "year": "2012"
+      },
+      {
+        "title": "Relawan TIK NTB",
+        "role": "Web Administrator",
+        "instance": "Mataram",
+        "year": "2012"
+      },
+      {
+        "title": "Kompetisi Muatan Roket Indonesia",
+        "role": "Aero II Team (UNRAM)",
+        "instance": "Yogyakarta",
+        "year": "2012"
+      },
+      {
+        "title": "Olimpiade Matematika",
+        "role": "2nd Champion",
+        "instance": "Nusa Tenggara Barat",
+        "year": "2004"
+      }
+    ]
+  },
+  "build": {
+    "path": ".",
+    "dev": {
+      "src": "_src",
+      "dst": "_dst",
+      "path": "."
+    },
+    "local": {
+      "dst": "../../",
+      "path": "github/zaf-web/_dst"
+    }
+  }
+}

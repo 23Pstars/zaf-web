@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>{{ site.title }}</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <meta name="description" content="{{ site.meta_desc }}"/>
+    <meta name="keywords" content="{{ site.meta_keywords }}"/>
+    <meta name="robots" content="index,follow"/>
+
+    <!-- Google Authorship and Publisher Markup -->
+    <link rel="author" href="{{{ site.social.google_plus }}}/posts"/>
+    <link rel="publisher" href="{{{ site.social.google_plus }}}"/>
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="{{ site.title }}">
+    <meta itemprop="description" content="{{ site.meta_desc }}">
+    <meta itemprop="image" content="{{{ build.path }}}/{{{ site.photo }}}">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="{{ site.title }}">
+    <meta name="twitter:site" content="{{{ site.social.twitter_user }}}">
+    <meta name="twitter:title" content="{{ site.title }}">
+    <meta name="twitter:description" content="{{ site.meta_desc }}">
+    <meta name="twitter:creator" content="{{ site.social.twitter_user }}">
+    <meta name="twitter:image:src" content="{{{ site.photo }}}">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="{{ site.title }}"/>
+    <meta property="og:type" content="info"/>
+    <meta property="og:url" content="{{{ site.url }}}"/>
+    <meta property="og:image" content="{{{ site.photo }}}"/>
+    <meta property="og:description" content="{{ site.meta_desc }}"/>
+    <meta property="og:site_name" content="{{ site.title }}"/>
+    <meta property="article:section" content="About"/>
+    <meta property="article:tag" content="{{ site.meta_keywords }}"/>
+
+    <link rel="icon" type="image/png" href="{{{ build.path }}}/assets/img/favicon.png"/>
+
+    <link type="text/css" rel="stylesheet" href="{{{ build.path }}}/assets/css/normalize.css"/>
+    <link type="text/css" rel="stylesheet" href="{{{ build.path }}}/assets/css/foundation.min.css"/>
+    <link type="text/css" rel="stylesheet" href="{{{ build.path }}}/assets/font/foundation-icons.css"/>
+    <link type="text/css" rel="stylesheet" href="{{{ build.path }}}/assets/css/style.css"/>
+
+</head>
+<body>
+
+<div class="main-container">
+    <div class="body">
+        <div class="row">
+            <div class="medium-6 columns">
+                <header>
+                    <h1 class="title">{{ site.title }}</h1>
+                    <h5 class="subheader">{{ site.sub_title }}</h5>
+                </header>
+            </div>
+            <div class="medium-6 columns">
+                <div class="row">
+                    <div class="small-6 columns">
+                        <h2><a href="{{{ site.blog.url }}}"><img src="{{{ build.path }}}/{{{ site.blog.icon }}}">
+                            blog</a></h2>
+                    </div>
+                    <div class="small-6 columns">
+                        <h2><a href="{{{ site.git.url }}}"><img src="{{{ build.path }}}/{{{ site.git.icon }}}"> git</a>
+                        </h2>
+                    </div>
+                </div>
+                <blockquote>
+                    <cite>{{ site.tag }}</cite>
+                </blockquote>
+            </div>
+        </div>
+
+        <hr/>
+
+        <div class="row">
+            <!-- bagian kiri -->
+            <div class="medium-6 columns">
+                <div class="row">
+                    <div class="medium-11 columns">
+
+                        <!-- intro dikit -->
+                        <article>
+                            <header>
+                                <h2 class="title">hello world</h2>
+                            </header>
+                            <div class="content text-justify">
+                                <div class="right">
+                                    <a class="th" href="{{{ site.url }}}">
+                                        <img src="{{{ build.path }}}/{{{ site.photo }}}"/>
+                                    </a>
+                                    <div class="social text-center">
+                                        <a href="{{{ site.social.github }}}"><i class="fi-social-github"></i></a>
+                                        <a href="{{{ site.social.bitbucket }}}"><i class="fi-torsos"></i></a>
+                                        <a href="{{{ site.social.twitter }}}"><i class="fi-social-twitter"></i></a>
+                                        <a href="{{{ site.social.facebook }}}"><i class="fi-social-facebook"></i></a>
+                                    </div>
+                                </div>
+                                {{{ site.intro }}}
+                            </div>
+                        </article>
+
+                        <!-- works -->
+                        <article>
+                            <header>
+                                <h2 class="title">function</h2>
+                            </header>
+                            <div class="content text-justify">
+                                <ul class="square">
+
+                                    {{ #site.works }}
+                                    <li>
+                                        {{ company }} ( <i>{{{ time }}}</i> ) <a href="{{{ url }}}"><i
+                                            class="fi-link"></i></a><br/>
+                                        <span><i class="fi-crown"></i> {{ role }}</span>
+                                    </li>
+                                    {{ /site.works }}
+
+                                </ul>
+                            </div>
+                        </article>
+
+                        <!-- educations -->
+                        <article>
+                            <header>
+                                <h2 class="title">do...while</h2>
+                            </header>
+                            <div class="content text-justify">
+                                <ul class="circle">
+
+                                    {{ #site.educations }}
+                                    <li>
+                                        <i>{{{ time }}}</i>, <strong>{{ instance }}</strong>
+                                        {{ #url }}
+                                        <a href="{{{ url }}}"><i class="fi-link"></i></a>
+                                        {{ /url }}
+                                        {{ #class }}
+                                        <br/>
+                                        <span><i class="fi-bookmark"></i> {{ class }}</span>
+                                        {{ /class }}
+                                    </li>
+                                    {{ /site.educations }}
+
+                                </ul>
+                            </div>
+                        </article>
+
+                    </div>
+                    <div class="medium-1 large-1 columns hide-for-small">
+                        <!-- separator -->
+                    </div>
+                </div>
+            </div>
+            <!-- bagian kanan -->
+            <div class="medium-6 columns">
+                <div class="row">
+                    <div class="medium-1 large-1 columns hide-for-small">
+                        <!-- separator -->
+                    </div>
+                    <div class="medium-11 columns">
+
+                        <!-- portfolio -->
+                        <article>
+                            <header>
+                                <h2 class="title">logs</h2>
+                            </header>
+                            <div class="content">
+                                <ul class="square">
+
+                                    {{ #site.portfolios }}
+                                    <li>
+                                        <strong>{{ title }}</strong><br/>
+                                        <span><i
+                                                class="fi-flag"></i> {{ role }} &mdash; {{ instance }} ({{ year }})</span>
+                                    </li>
+                                    {{ /site.portfolios }}
+
+                                </ul>
+                            </div>
+
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr/>
+
+        <div class="row text-center">
+            <small>&copy; Copyleft {{ site.copyleft }} &mdash; <a href="{{{ site.repo_url }}}">{{ site.title }}</a> </small>
+            <br/><br/>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="{{{ build.path }}}/assets/js/app.js"></script>
+
+</body>
+</html>

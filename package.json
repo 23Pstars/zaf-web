@@ -1,0 +1,16 @@
+{
+  "name": "zaf-web",
+  "version": "1.0.0",
+  "author": "Ahmad Zafrullah",
+  "dependencies": {
+    "foundation-icons": "^1.0.1",
+    "foundation-sites": "^5.5.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlclean": "^2.7.14",
+    "gulp-mustache": "^2.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "normalize-css": "^2.3.1"
+  }
+}
