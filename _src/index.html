@@ -110,7 +110,7 @@
 
                                     {{ #site.works }}
                                     <li>
-                                        {{ company }} ( <i>{{{ time }}}</i> ) <a href="{{{ url }}}"><i
+                                        {{ company }} ( <i>{{{ time }}}</i> )&nbsp;<a href="{{{ url }}}"><i
                                             class="fi-link"></i></a><br/>
                                         <span><i class="fi-crown"></i> {{ role }}</span>
                                     </li>
@@ -132,7 +132,7 @@
                                     <li>
                                         <i>{{{ time }}}</i>, <strong>{{ instance }}</strong>
                                         {{ #url }}
-                                        <a href="{{{ url }}}"><i class="fi-link"></i></a>
+                                        &nbsp;<a href="{{{ url }}}"><i class="fi-link"></i></a>
                                         {{ /url }}
                                         {{ #class }}
                                         <br/>
