@@ -46,10 +46,10 @@
         "role": "Technical Engineer"
       },
       {
-        "company": "Lombok Web Master",
-        "time": "2013",
-        "url": "http://www.lombokwebmaster.com",
-        "role": "Web Engineer"
+        "company": "SaldoPayPal.id",
+        "time": "2017 &mdash; Now",
+        "url": "https://saldopaypal.id",
+        "role": "Maintainer"
       }
     ],
     "educations": [
@@ -115,6 +115,12 @@
         "title": "Pekan Ilmiah Mahasiswa Nasional",
         "role": "Web Developer",
         "instance": "Universitas Mataram",
+        "year": "2013"
+      },
+      {
+        "title": "Lombok Web Master",
+        "role": "Web Engineer",
+        "instance": "Mataram",
         "year": "2013"
       },
       {
