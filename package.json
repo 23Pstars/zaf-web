@@ -12,5 +12,8 @@
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
     "normalize-css": "^2.3.1"
+  },
+  "scripts": {
+    "deploy": "gulp && scp -r _dst/* lrsoft@mataram-s.lrsoft.org:/home/lrsoft/public_html/zaf.web.id/"
   }
 }

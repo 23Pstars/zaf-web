@@ -26,7 +26,9 @@ gulp.task('html-local', function () {
 
 gulp.task('css', function () {
     gulp.src(config.build.dev.src + '/assets/scss/*.scss')
-        .pipe(sass({outputStyle: "compressed"}))
+        .pipe(sass({
+            outputStyle: "compressed"
+        }))
         .pipe(gulp.dest(config.build.dev.dst + '/assets/css'));
 });
 
@@ -38,12 +40,17 @@ gulp.task('js', function () {
 
 gulp.task('copy', function () {
     gulp.src(['node_modules/foundation-sites/css/foundation.min.css',
-        'node_modules/normalize-css/normalize.css'])
+            'node_modules/normalize-css/normalize.css'
+        ])
         .pipe(gulp.dest(config.build.dev.dst + '/assets/css'));
     gulp.src(['node_modules/foundation-icons/foundation-icons*'])
         .pipe(gulp.dest(config.build.dev.dst + '/assets/font'));
     gulp.src([config.build.dev.src + '/assets/img/*'])
         .pipe(gulp.dest(config.build.dev.dst + '/assets/img'));
+    gulp.src([config.build.dev.src + '/*.txt'])
+        .pipe(gulp.dest(config.build.dev.dst));
+    gulp.src([config.build.dev.src + '/.htaccess'])
+        .pipe(gulp.dest(config.build.dev.dst));
 });
 
 gulp.task('default', ['copy', 'html', 'css', 'js']);
