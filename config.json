@@ -34,22 +34,28 @@
         "role": "CTO, Co-Founder, and Project Manager"
       },
       {
-        "company": "Indo Travel Online",
-        "time": "2014 &mdash; Now",
-        "url": "http://indotravelonline.com",
-        "role": "Co-Founder and Technical Manager"
-      },
-      {
         "company": "Lombok Reisen",
         "time": "2013 &mdash; Now",
         "url": "http://www.lombokreisen.com",
         "role": "Technical Engineer"
       },
       {
+        "company": "Indo Travel Online",
+        "time": "2014 &mdash; Now",
+        "url": "http://indotravelonline.com",
+        "role": "Co-Founder and Technical Manager"
+      },
+      {
         "company": "SaldoPayPal.id",
         "time": "2017 &mdash; Now",
         "url": "https://saldopaypal.id",
         "role": "Maintainer"
+      },
+      {
+        "company": "University of Mataram",
+        "time": "2018 &mdash; Now",
+        "url": "https://unram.ac.id",
+        "role": "Lecturer"
       }
     ],
     "educations": [
