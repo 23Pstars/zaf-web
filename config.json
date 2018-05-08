@@ -7,7 +7,7 @@
     "meta_desc": "Blogger, Developer, Designer, and Freelancer Web Design (sometime) in Mataram Lombok. Email : zaf@elektro08.com",
     "meta_keywords": "Ahmad Zafrullah, Zaf Tapon, Tapon Bilebante, Blogger, Web Design, Web Developer, Web Based Application, Elektro 2008, Fakultas Teknik UNRAM, Universitas Mataram, LRsoft",
     "photo": "assets/img/me2.jpg",
-    "copyleft": "2017",
+    "copyleft": "2018",
     "url": "https://zaf.web.id",
     "repo_url": "https://github.com/23Pstars/zaf-web",
     "blog": {
@@ -89,7 +89,7 @@
     "portfolios": [
       {
         "title": "ELPSA Project",
-        "role": "Web Endineer",
+        "role": "Web Engineer",
         "instance": "IKIP Mataram",
         "year": "2016"
       },
