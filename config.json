@@ -26,40 +26,32 @@
       "twitter": "https://twitter.com/23Pstars",
       "facebook": "https://facebook.com/23Pstars"
     },
-    "works": [
+    "works": [{
+        "company": "University of Mataram",
+        "time": "2018 &mdash; Now",
+        "url": "https://if.unram.ac.id",
+        "role": "Lecturer, Informatics Engineering"
+      },
       {
         "company": "LRsoft Corp.",
         "time": "2013 &mdash; Now",
         "url": "http://lrsoft.co.id",
-        "role": "CTO, Co-Founder, and Project Manager"
+        "role": "DevOps, Co-Founder"
       },
       {
         "company": "Lombok Reisen",
         "time": "2013 &mdash; Now",
-        "url": "http://www.lombokreisen.com",
+        "url": "https://www.lombokreisen.com",
         "role": "Technical Engineer"
       },
       {
         "company": "Indo Travel Online",
         "time": "2014 &mdash; Now",
-        "url": "http://indotravelonline.com",
-        "role": "Co-Founder and Technical Manager"
-      },
-      {
-        "company": "SaldoPayPal.id",
-        "time": "2017 &mdash; Now",
-        "url": "https://saldopaypal.id",
-        "role": "Maintainer"
-      },
-      {
-        "company": "University of Mataram",
-        "time": "2018 &mdash; Now",
-        "url": "https://unram.ac.id",
-        "role": "Lecturer"
+        "url": "https://indotravelonline.com",
+        "role": "Technical Manager, Co-Founder"
       }
     ],
-    "educations": [
-      {
+    "educations": [{
         "time": "2015 &mdash; 2018",
         "instance": "Gadjah Mada University",
         "url": "https://ugm.ac.id",
@@ -86,8 +78,12 @@
         "instance": "SDN Tapon"
       }
     ],
-    "portfolios": [
-      {
+    "portfolios": [{
+        "title": "SaldoPayPal.id",
+        "role": "Maintainer",
+        "instance": "LRsoft Corp.",
+        "year": "2017"
+      }, {
         "title": "ELPSA Project",
         "role": "Web Engineer",
         "instance": "IKIP Mataram",
