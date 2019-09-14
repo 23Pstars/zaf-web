@@ -2,43 +2,46 @@ const fs = require('fs');
 const gulp = require('gulp');
 const mustache = require('gulp-mustache');
 const sass = require('gulp-sass');
-const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 const htmlclean = require('gulp-htmlclean');
 
-var config = JSON.parse(fs.readFileSync('./config.json'));
+let config = JSON.parse(fs.readFileSync('./config.json'));
 
-gulp.task('html', function () {
+gulp.task('html', done => {
     config.build.path = config.build.dev.path;
     gulp.src(config.build.dev.src + '/*.html')
         .pipe(mustache(config))
         .pipe(htmlclean())
-        .pipe(gulp.dest(config.build.dev.dst))
+        .pipe(gulp.dest(config.build.dev.dst));
+    done();
 });
 
-gulp.task('html-local', function () {
+gulp.task('html-local', done => {
     config.build.path = config.build.local.path;
     gulp.src(config.build.dev.src + '/*.html')
         .pipe(mustache(config))
         .pipe(htmlclean())
-        .pipe(gulp.dest(config.build.local.dst))
+        .pipe(gulp.dest(config.build.local.dst));
+    done();
 });
 
-gulp.task('css', function () {
+gulp.task('css', done => {
     gulp.src(config.build.dev.src + '/assets/scss/*.scss')
         .pipe(sass({
             outputStyle: "compressed"
         }))
         .pipe(gulp.dest(config.build.dev.dst + '/assets/css'));
+    done();
 });
 
-gulp.task('js', function () {
+gulp.task('js', done => {
     gulp.src(config.build.dev.src + '/assets/js/*.js')
         .pipe(uglify())
         .pipe(gulp.dest(config.build.dev.dst + '/assets/js'));
+    done();
 });
 
-gulp.task('copy', function () {
+gulp.task('copy', done => {
     gulp.src(['node_modules/foundation-sites/css/foundation.min.css',
             'node_modules/normalize-css/normalize.css'
         ])
@@ -51,13 +54,14 @@ gulp.task('copy', function () {
         .pipe(gulp.dest(config.build.dev.dst));
     gulp.src([config.build.dev.src + '/.htaccess'])
         .pipe(gulp.dest(config.build.dev.dst));
+    done();
 });
 
-gulp.task('default', ['copy', 'html', 'css', 'js']);
-gulp.task('local', ['copy', 'html-local', 'css', 'js']);
+gulp.task('default', gulp.parallel(['copy', 'html', 'css', 'js']));
+gulp.task('local', gulp.parallel(['copy', 'html-local', 'css', 'js']));
 
-gulp.task('watch', ['default'], function () {
+gulp.task('watch', gulp.parallel(['default'], () => {
     gulp.watch(config.build.dev.src + '/*.html', ['html']);
     gulp.watch(config.build.dev.src + '/assets/scss/*.scss', ['css']);
     gulp.watch(config.build.dev.src + '/assets/js/*.js', ['js']);
-});
+}));
