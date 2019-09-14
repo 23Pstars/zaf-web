@@ -1,4 +1,2 @@
-~/
-.idea
-_dst
-node_modules
+node_modules/
+_build

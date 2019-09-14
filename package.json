@@ -1,19 +1,13 @@
 {
-  "name": "zaf-web",
+  "name": "zaf",
   "version": "1.0.0",
-  "author": "Ahmad Zafrullah",
+  "description": "Personal profile page",
+  "main": "index.js",
+  "author": "Zaf",
+  "license": "MIT",
   "dependencies": {
-    "foundation-icons": "^1.0.1",
-    "foundation-sites": "^5.5.2",
     "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-htmlclean": "^2.7.16",
-    "gulp-mustache": "^2.3.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-uglify": "^3.0.0",
-    "normalize-css": "^2.3.1"
-  },
-  "scripts": {
-    "deploy": "gulp && scp -r _dst/* lrsoft@mataram-s.lrsoft.org:/home/lrsoft/public_html/zaf.web.id/"
+    "gulp-cssnano": "^2.1.2",
+    "gulp-htmlclean": "^2.7.17"
   }
 }
